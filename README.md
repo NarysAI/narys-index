@@ -1,5 +1,7 @@
 # PartCAD Index
 
+> NarysAI fork: this registry preserves the upstream PartCAD package references and adds NarysAI-maintained packages under `//pub/narysai`. Original package ownership and licensing remain with each package maintainer.
+
 This is a registry of all public PartCAD packages.
 
 Add a reference to other public package by creating a pull request.

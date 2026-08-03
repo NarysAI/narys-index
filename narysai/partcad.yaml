@@ -1,0 +1,9 @@
+desc: NarysAI packages for AI-ready engineering and manufacturing workflows.
+
+import:
+  comp-ivins-case-4:
+    desc: Raspberry Pi 5 enclosure for the Pineboards AI Bundle.
+    type: git
+    url: https://github.com/NarysAI/COMP-IVINS-CASE-4.git
+    web: https://github.com/NarysAI/COMP-IVINS-CASE-4
+    poc: https://github.com/NarysAI
