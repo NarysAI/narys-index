@@ -2,9 +2,14 @@ import:
   cqwarehouse:
     desc: Standard imperial parts implemented in cq-warehouse
     type: git
-    url: https://github.com/partcad/partcad-cqwarehouse/
-    relPath: imperial.yaml
+    url: https://github.com/NarysAI/PUB.git
+    relPath: std/imperial/cqwarehouse
+    web: https://github.com/NarysAI/PUB/tree/main/std/imperial/cqwarehouse
+    revision: main
   dimensional-lumber:
     desc: Dimensional lumber in imperial units
     type: git
-    url: https://github.com/partcad/partcad-standard-imperial-dimensional-lumber/
+    url: https://github.com/NarysAI/PUB.git
+    web: https://github.com/NarysAI/PUB/tree/main/std/imperial/dimensional-lumber
+    revision: main
+    relPath: std/imperial/dimensional-lumber

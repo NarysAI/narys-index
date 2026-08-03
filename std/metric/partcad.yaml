@@ -1,17 +1,24 @@
 cover:
   package: cqwarehouse
-
 import:
   cqwarehouse:
     desc: Standard metric parts implemented in cq-warehouse
     type: git
-    url: https://github.com/partcad/partcad-cqwarehouse/
-    relPath: metric.yaml
+    url: https://github.com/NarysAI/PUB.git
+    relPath: std/metric/cqwarehouse
+    web: https://github.com/NarysAI/PUB/tree/main/std/metric/cqwarehouse
+    revision: main
   m:
     desc: Standard M* interfaces
     type: git
-    url: https://github.com/partcad/partcad-standard-metric-m/
+    url: https://github.com/NarysAI/PUB.git
+    web: https://github.com/NarysAI/PUB/tree/main/std/metric/m
+    revision: main
+    relPath: std/metric/m
   nema:
     desc: Standard NEMA* interfaces
     type: git
-    url: https://github.com/partcad/partcad-standard-metric-nema/
+    url: https://github.com/NarysAI/PUB.git
+    web: https://github.com/NarysAI/PUB/tree/main/std/metric/nema
+    revision: main
+    relPath: std/metric/nema

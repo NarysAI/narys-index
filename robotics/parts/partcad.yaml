@@ -2,8 +2,14 @@ import:
   gobilda:
     desc: GoBILDA
     type: git
-    url: https://github.com/partcad/partcad-robotics-part-vendor-gobilda.git
+    url: https://github.com/NarysAI/PUB.git
+    web: https://github.com/NarysAI/PUB/tree/main/robotics/parts/gobilda
+    revision: main
+    relPath: robotics/parts/gobilda
   dfrobot:
     desc: DFRobot
     type: git
-    url: https://github.com/partcad/partcad-robotics-part-vendor-dfrobot.git
+    url: https://github.com/NarysAI/PUB.git
+    web: https://github.com/NarysAI/PUB/tree/main/robotics/parts/dfrobot
+    revision: main
+    relPath: robotics/parts/dfrobot

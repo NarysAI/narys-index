@@ -1,19 +1,24 @@
 cover:
   package: build123d
-
 import:
   cadquery:
     desc: Examples of CadQuery scripts
     type: git
-    url: https://github.com/openvmp/cadquery
-    revision: examples-in-partcad
+    url: https://github.com/NarysAI/PUB.git
+    revision: main
+    web: https://github.com/NarysAI/PUB/tree/main/examples/script/cadquery
+    relPath: examples/script/cadquery
   cadquery-contrib:
     desc: A place to share CadQuery scripts, modules, tutorials and projects
     type: git
-    url: https://github.com/openvmp/forked-cadquery-contrib
-    revision: hotfix/cqgi-hidden-errors
+    url: https://github.com/NarysAI/PUB.git
+    revision: main
+    web: https://github.com/NarysAI/PUB/tree/main/examples/script/cadquery-contrib
+    relPath: examples/script/cadquery-contrib
   build123d:
     desc: Examples of build123d scripts
     type: git
-    url: https://github.com/openvmp/build123d
-    revision: partcad-examples-update-2
+    url: https://github.com/NarysAI/PUB.git
+    revision: main
+    web: https://github.com/NarysAI/PUB/tree/main/examples/script/build123d
+    relPath: examples/script/build123d

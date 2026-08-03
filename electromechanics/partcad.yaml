@@ -4,12 +4,21 @@ import:
   stepperonline:
     desc: STEPPERONLINE
     type: git
-    url: https://github.com/partcad/partcad-electromechanics-stepperonline.git
+    url: https://github.com/NarysAI/PUB.git
+    web: https://github.com/NarysAI/PUB/tree/main/electromechanics/stepperonline
+    revision: main
+    relPath: electromechanics/stepperonline
   cloudray:
     desc: Cloudray
     type: git
-    url: https://github.com/partcad/partcad-electromechanics-cloudray.git
+    url: https://github.com/NarysAI/PUB.git
+    web: https://github.com/NarysAI/PUB/tree/main/electromechanics/cloudray
+    revision: main
+    relPath: electromechanics/cloudray
   towerpro:
     desc: TowerPro
     type: git
-    url: https://github.com/partcad/partcad-electromechanics-towerpro.git
+    url: https://github.com/NarysAI/PUB.git
+    web: https://github.com/NarysAI/PUB/tree/main/electromechanics/towerpro
+    revision: main
+    relPath: electromechanics/towerpro
