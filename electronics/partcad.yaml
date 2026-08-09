@@ -13,3 +13,10 @@ import:
     web: https://github.com/NarysAI/PUB/tree/main/electronics/power-converters
     revision: main
     relPath: electronics/power-converters
+  modules:
+    desc: Electronic breakout boards and sensor modules
+    type: git
+    url: https://github.com/NarysAI/PUB.git
+    web: https://github.com/NarysAI/PUB/tree/main/electronics/modules
+    revision: main
+    relPath: electronics/modules

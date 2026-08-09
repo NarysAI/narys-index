@@ -1,0 +1,22 @@
+name: Validate PUB website tree
+on:
+  push:
+  pull_request:
+jobs:
+  validate-pub-tree:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: index
+      - uses: actions/checkout@v4
+        with:
+          repository: NarysAI/PUB
+          ref: main
+          path: PUB
+          lfs: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pyyaml
+      - run: python index/tools/validate_pub_coverage.py index PUB
