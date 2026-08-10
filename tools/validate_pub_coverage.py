@@ -24,7 +24,26 @@ def main() -> int:
         if not isinstance(imports, dict):
             continue
         for name, raw in imports.items():
-            if not isinstance(raw, dict) or str(raw.get("url", "")).rstrip("/") not in PUB_URLS:
+            if not isinstance(raw, dict):
+                continue
+            metadata = raw.get("narys_project")
+            project = metadata if isinstance(metadata, dict) and metadata.get("kind") == "project" else None
+            if project:
+                rel_path = str(project.get("pub_pointer_path", "")).strip("/")
+                if not rel_path:
+                    errors.append(f"{config_path.relative_to(index_root)}: project import {name!r} has no pub_pointer_path")
+                    continue
+                pointer = pub_root / rel_path / "partcad.yaml"
+                if not pointer.is_file():
+                    errors.append(f"{config_path.relative_to(index_root)}: missing PUB project pointer: {rel_path}")
+                    continue
+                pointer_data = yaml.safe_load(pointer.read_text(encoding="utf-8")) or {}
+                pointer_project = pointer_data.get("narys_project") or {}
+                if pointer_project.get("canonical_repo") != project.get("canonical_repo"):
+                    errors.append(f"{config_path.relative_to(index_root)}: canonical_repo differs from PUB pointer: {rel_path}")
+                covered_roots.add(rel_path)
+                continue
+            if str(raw.get("url", "")).rstrip("/") not in PUB_URLS:
                 continue
             rel_path = str(raw.get("relPath", "")).strip("/")
             if not rel_path:
@@ -44,7 +63,7 @@ def main() -> int:
     if errors:
         print("\n".join(errors))
         return 1
-    print(f"All {len(packages)} PUB packages are covered by {len(covered_roots)} website imports")
+    print(f"All {len(packages)} PUB packages and project pointers are covered by {len(covered_roots)} website imports")
     return 0
 
 

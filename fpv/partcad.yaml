@@ -1,0 +1,22 @@
+desc: FPV engineering projects and released hardware packages.
+import:
+  case-holder:
+    display_name: Case_holder
+    desc: Open editable Case_holder project for FPV hardware.
+    type: git
+    url: https://github.com/NarysAI/Case_holder.git
+    web: https://github.com/NarysAI/Case_holder
+    poc: https://github.com/NarysAI
+    revision: main
+    narys_project:
+      schema_version: 1
+      kind: project
+      access: public
+      canonical_repo: https://github.com/NarysAI/Case_holder
+      default_branch: main
+      contribution_url: https://github.com/NarysAI/Case_holder/blob/main/CONTRIBUTING.md
+      issues_url: https://github.com/NarysAI/Case_holder/issues
+      current_drawing: drawing-v1.0.0
+      category: FPV
+      pub_pointer_path: fpv/case-holder
+      pub_url: https://github.com/NarysAI/PUB/tree/main/fpv/case-holder

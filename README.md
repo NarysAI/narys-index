@@ -1,12 +1,19 @@
 # PartCAD Index
 
-> NarysAI fork: this registry preserves the upstream PartCAD package references and adds NarysAI-maintained packages under `//pub/narysai`. Original package ownership and licensing remain with each package maintainer.
+> NarysAI fork: this registry preserves the upstream PartCAD package references,
+> adds NarysAI-maintained packages, and indexes active Git-backed engineering
+> projects such as `//pub/fpv/case-holder`. Original package ownership and
+> licensing remain with each package maintainer.
 
 This is a registry of all public PartCAD packages.
 
 Add a reference to other public package by creating a pull request.
 Add new files or extend the existing ones. Create your own directory if needed.
 New files need to be referenced to by existing files.
+
+Active open projects use a direct canonical Git import with a `narys_project`
+mapping. Its `pub_pointer_path` must identify a source-free project pointer in
+`NarysAI/PUB`; CI verifies that both records name the same canonical repository.
 
 ## Syntax
 
