@@ -19,6 +19,13 @@ import:
     web: https://github.com/NarysAI/PUB/tree/main/std/metric/m
     revision: main
     relPath: std/metric/m
+  standoffs:
+    desc: Parametric M2-M6 hexagonal threaded standoffs (FF, MF and MM)
+    type: git
+    url: https://github.com/NarysAI/PUB.git
+    web: https://github.com/NarysAI/PUB/tree/main/std/metric/standoffs
+    revision: main
+    relPath: std/metric/standoffs
   nema:
     desc: Standard NEMA* interfaces
     type: git
