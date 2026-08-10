@@ -1,0 +1,11 @@
+desc: FPV frames.
+import:
+  10in-tube-frame:
+    display_name: 10-inch tube frame
+    desc: Complete 10-inch FPV tube-frame construction reference.
+    type: git
+    url: https://github.com/NarysAI/PUB.git
+    relPath: fpv/frames/10in-tube-frame
+    revision: main
+    web: https://github.com/NarysAI/PUB/tree/main/fpv/frames/10in-tube-frame
+    poc: https://github.com/NarysAI
