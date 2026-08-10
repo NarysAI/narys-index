@@ -8,10 +8,10 @@ import:
     web: https://github.com/NarysAI/PUB/tree/main/electronics/modules/ec-buying
     revision: main
     relPath: electronics/modules/ec-buying
-  wheeltec-h30wp:
-    desc: WHEELTEC H30WP IMU board reference model
+  wheeltec-h30:
+    desc: WHEELTEC H30 IMU family with exact PCB and enclosed variants
     type: git
     url: https://github.com/NarysAI/PUB.git
-    web: https://github.com/NarysAI/PUB/tree/main/electronics/modules/wheeltec-h30wp
+    web: https://github.com/NarysAI/PUB/tree/main/electronics/modules/wheeltec-h30
     revision: main
-    relPath: electronics/modules/wheeltec-h30wp
+    relPath: electronics/modules/wheeltec-h30
